@@ -1,0 +1,8 @@
+[default]
+DEBUG = true
+TITLE = "Site"
+EXTENSIONS = [
+    "site_em_flask.ext.appearance",
+    "site_em_flask.ext.configuration",
+    "site_em_flask.blueprints.webui"
+]

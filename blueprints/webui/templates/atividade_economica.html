@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CSS-->
+  <link rel="stylesheet" href="/static/css_bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/node_modules/select2/dist/css/select2.min.css">
+
+  <title>Atividade Econômica</title>  
+
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row p-0 pb-5 pe-lg-0 pt-lg-0 align-items-center rounded-0 border shadow-lg">
+      <div class="py-5 text-center">
+        <h2>Atividade Econômica</h2>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <select id="atividade_ecom">
+          <option value = "" selected hidden>Selecione a atividade Econômica</option>
+          <option value="1">Algodao</option>
+          <option value="2">Mandioca</option>
+          <option value="3">Agricultura - produtores</option>
+        </select>
+        <div class="form-floating">
+          <a class="btn btn-success" type="button" >Buscar</a>
+          <a href="/" class="btn btn-success" type="button" >Voltar</a>
+        </div>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto" >
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Principais infrações(%)</th>
+              <th scope="col">Principais penalidades(%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Deixou de recolher, no prazo regulamentar, o ICMS relativo às operações subseqüentes, no valor original</td>
+              <td>Art. 117, I, "e", da Lei n. 1.810/97 </td>
+            </tr>
+            <tr>
+              <td>Deixou de registrar, nos livros fiscais próprios, documento relativo à entrada de mercadoria ou bem </td>
+              <td>Art. 117, V, "a", da Lei n. 1810/97 </td>
+            </tr>
+            <tr>
+              <td>Entrega de mercadorias a destinatário diverso do indicado na nota fiscal</td>
+              <td>Art. 117, III, "a" da Lei 1.810/97</td>
+            </tr>
+          </tbody>
+        </table>        
+      </div>
+    </div>
+  </div>
+  <script src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/static/node_modules/select2/dist/js/select2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#atividade_ecom').select2();
+    });
+  </script>
+</body>
+</html>
